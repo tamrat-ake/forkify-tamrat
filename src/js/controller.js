@@ -71,6 +71,9 @@ const controlAddBookmark = function () {
   // render bookmark
   bookmarkView.render(model.state.bookmarks);
 };
+const newFeature = function () {
+  console.log('welcome to the application');
+};
 
 const init = function () {
   recipeView.addHandlerRender(controlRecipe);
@@ -78,6 +81,7 @@ const init = function () {
   recipeView.addHandlerAddBookmark(controlAddBookmark);
   searchView.addHandlerSearch(contorlSearchResult);
   paginatioinView.addHandlerClick(controlPagination);
+  newFeature();
 };
 
 init();
